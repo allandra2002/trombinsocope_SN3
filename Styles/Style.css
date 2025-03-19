@@ -16,10 +16,31 @@ body {
     margin-bottom: 30px;
 }
 
+.title{
+    font-size: 3rem;  /* Taille du texte */
+    font-weight: bold;  /* Texte en gras */
+    color: #c8ad7f;  /* Couleur vive (orange-rouge) */
+    text-transform: uppercase;  /* Mettre le texte en majuscules */
+    letter-spacing: 2px;  /* Espacement entre les lettres */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);  /* Ombre douce */
+    background: linear-gradient(45deg, #ff6f61, #ff914d);  /* Dégradé lumineux */
+    -webkit-background-clip: text;  /* Appliquer le dégradé sur le texte */
+    background-clip: text;
+    padding: 10px 20px;  /* Espacement autour du titre */
+    border-radius: 8px;  /* Coins arrondis */
+    transition: transform 0.3s ease, color 0.3s ease;  /* Animation de transition */
+  }
+  
+.title:hover {
+    transform: scale(1.1);  /* Agrandir le titre au survol */
+    color: #333;  /* Changer la couleur du texte lors du survol */
+  }
+  
+
 .cbp-rfgrid {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
     justify-content: center;
     padding: 0;
     list-style: none;
@@ -40,6 +61,12 @@ body {
 .cbp-rfgrid li a img {
     width: 100%;
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ajout de la transition */
+}
+
+.cbp-rfgrid li a:hover img {
+    transform: scale(1.1); /* Agrandir l'image au survol */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Ajouter une ombre pour faire ressortir l'image */
 }
 
 .cbp-rfgrid li a div {
@@ -66,6 +93,25 @@ body {
 .poste {
     font-size: 14px;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.citation {
+    max-width: 60%;
+}
+
 
 @media screen and (max-width: 970px) {
     .conteneur {
