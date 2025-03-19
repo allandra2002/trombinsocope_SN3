@@ -16,12 +16,6 @@ body {
     margin-bottom: 30px;
 }
 
-.header-image {
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-}
-
 .cbp-rfgrid {
     display: flex;
     flex-wrap: wrap;
